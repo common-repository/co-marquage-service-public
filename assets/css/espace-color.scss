@@ -1,0 +1,240 @@
+
+@mixin espace-color($PrimaryColor, $SecondaryColor) {
+
+
+	/* GENERIC
+	-------------------------------------------------------------------- */
+	.co-btn {
+		&.co-btn-primary {
+			background: $PrimaryColor;
+			&:hover {
+				background: $SecondaryColor;
+			}
+		}
+		&.co-btn-outline-primary {
+			color: $PrimaryColor !important; border-color: $PrimaryColor;
+			svg {
+				fill: $PrimaryColor;
+			}
+			&:hover {
+				background: $PrimaryColor;
+			}
+		}
+		&.co-btn-slide {
+
+			&.active {
+				color: $PrimaryColor;
+			}
+
+			.chevron-down, .co-external-link {
+				border-color: $PrimaryColor;
+				svg {
+					fill: $PrimaryColor;
+				}
+			}
+
+			&:hover .chevron-down,
+			&:hover .co-external-link {
+				background-color: $PrimaryColor;
+				svg {
+					fill:#fff;
+				}
+			}
+		}
+	}
+
+	/* BAR
+	-------------------------------------------------------------------- */
+	#co-bar {
+		.co-home {
+			svg {
+				&:hover {
+					fill:$PrimaryColor;
+				}
+			}
+		}
+
+		#co-search {
+			input {
+				&[type="submit"] {
+					background-color: $PrimaryColor;
+				}
+
+			}
+		}
+		.btn-monsp {
+			&:hover {
+				background: #fff;
+				img {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	/* RETURN TO TOP
+	-------------------------------------------------------------------- */
+	#co-return-to-top {
+		a {
+			.chevron-up {
+				background: $PrimaryColor;
+			}
+		}
+	}
+
+	/* PAGE
+	-------------------------------------------------------------------- */
+	#co-page {
+
+		a {
+			&:hover {
+				color:$PrimaryColor;
+			}
+		}
+		.co-breadcrumb {
+			a {
+				&:hover {
+					color: $PrimaryColor;
+				}
+				&.last {
+					color:$PrimaryColor;
+				}
+			}
+		}
+
+		h1, h2, h3 {
+			color: $PrimaryColor;
+		}
+
+		ul, ol {
+			&.list-puce {
+				li {
+					&::before {
+						color: $PrimaryColor;
+					}
+				}
+			}
+		}
+
+		.table {
+			thead {
+				td {
+					background-color: $PrimaryColor!important;
+				}
+			}
+		}
+
+		&.comarquage-home {
+			.co-home-theme {
+				.home-theme-list {
+					.home-theme-list-item {
+						h3 {
+							a {
+								color: $PrimaryColor;
+							}
+						}
+					}
+				}
+			}
+
+			.co-panel-body {
+				p.link-all a {
+					color: $PrimaryColor;
+				}
+			}
+		}
+
+		.nav-tabs {
+			border-color: $PrimaryColor;
+			& > li {
+				&.active > span {
+					background-color: $PrimaryColor; border-color: $PrimaryColor;
+				}
+			}
+		}
+
+
+		.tabs {
+			.tab-content {
+				border-color: $PrimaryColor;
+			}
+		}
+
+
+		.tool-slide {
+			button {
+				& > div {
+					background-color: $PrimaryColor;
+				}
+				&:hover {
+					color:$PrimaryColor;
+				}
+			}
+		}
+
+		.service-in-content {
+			.co-numerocerfa {
+				color: $PrimaryColor; font-weight: bold;
+			}
+		}
+
+		.co-search-city {
+			label {
+				color: $PrimaryColor;
+			}
+		}
+
+		.bloc-attention {
+			border-color: $PrimaryColor;
+			.bloc-attention-title {
+				color: $PrimaryColor;
+				svg {
+					fill: $PrimaryColor;
+				}
+			}
+		}
+
+		.bloc-asavoir {
+			border-color: $PrimaryColor;
+			.bloc-asavoir-title {
+				color: $PrimaryColor;
+				svg {
+					fill: $PrimaryColor;
+				}
+			}
+		}
+		.bloc-anoter {
+			border: 1px solid $PrimaryColor;
+			.bloc-anoter-title {
+				color: $PrimaryColor;
+				svg {
+					fill: $PrimaryColor;
+				}
+			}
+		}
+
+		.bloc-cas-radio {
+			.choice-tree-choice-list {
+				li.choice-tree-choice {
+					&.choice-active {
+						& > .co-radio-head {
+							button {
+								color: $PrimaryColor;
+							}
+						}
+					}
+					.btn-like-radio {
+						&.active {
+							.radio-icon-active {
+								svg {
+									fill: $PrimaryColor;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}
